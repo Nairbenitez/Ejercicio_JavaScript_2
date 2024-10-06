@@ -3,8 +3,8 @@
 // Ejercicio 1: Condicionales if-else
 // Instrucción: Escribe una función que reciba un número y verifique si es par o impar.
 // Imprime "El número es par" o "El número es impar" según corresponda.
-function verificarParidad(14) {
-    if (14 % 2 === 0) {
+function verificarParidad( numero) {
+    if (numero % 2 === 0) {
         console.log("El número es par")
       } else {
         console.log("El número es impar")
@@ -34,7 +34,6 @@ function clasificarEdad(edad) {
             numero--;
         }
     }
-    cuentaRegresiva(5);
 
 // Ejercicio 4: Bucles do-while
 // Instrucción: Escribe una función que imprima "Estoy aprendiendo JavaScript" 5 veces utilizando un bucle `do-while`.
@@ -55,8 +54,6 @@ function imprimirPares(numero) {
         }
     }
 }
-imprimirPares(10);
-
 // Ejercicio 6: Uso de break
 // Instrucción: Escribe una función que recorra los números del 1 al 10, pero detén el bucle cuando el número sea igual a 6.
 function detenerEnSeis() {
@@ -83,6 +80,7 @@ function saltarCinco() {
         console.log(numero)
         numero++
     }
+}
 
 // Ejercicio 8: Switch básico
 // Instrucción: Escribe una función que reciba un número del 1 al 7 y devuelva el día de la semana correspondiente (1 es "Lunes", 2 es "Martes", ..., 7 es "Domingo"). Usa la estructura `switch`.
@@ -138,7 +136,7 @@ function evaluarNumeros(a, b, c) {
 }
 
 // Exportar todas las funciones
-export {
+module.export= {
     verificarParidad,
     clasificarEdad,
     cuentaRegresiva,
@@ -149,4 +147,4 @@ export {
     obtenerDiaSemana,
     esVocal,
     evaluarNumeros,
-};
+}
